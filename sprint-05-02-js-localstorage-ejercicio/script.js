@@ -5,19 +5,30 @@
 
 localStorage.setItem('nombre', 'Bernat');
 localStorage.setItem('edad', '25');
-localStorage.setItem('profesion', 'Desarrollador Full Stack Junior');
-localStorage.setItem('CP', '46600');
+localStorage.setItem('profesion', 'Desarrollador Full Stack');
+localStorage.setItem('CP', '46800');
 localStorage.setItem('ciudad', 'Valencia');
 localStorage.setItem('telefono', '1212323213');
 
-const nombre = localStorage.getItem('nombre');
+let nombre = (localStorage.getItem('nombre'));
 
-const edad = localStorage.getItem('edad');
+let edad = (localStorage.getItem('edad'));
 
-const profesion = localStorage.getItem('profesion');
+let profesion = (localStorage.getItem('profesion'));
 
-const CP = localStorage.getItem('CP');
+let CP = (localStorage.getItem('CP'));
 
-const ciudad = localStorage.getItem('ciudad');
+let ciudad = (localStorage.getItem('ciudad'));
 
-const teléfono = localStorage.getItem('telefono');
+let teléfono = (localStorage.getItem('telefono'));
+
+let stringCompleto = `Mi nombre es ${nombre} y mi edad es ${edad} mi profesion es ${profesion} vivo en ${ciudad} y su codigo postal es ${CP} y mi numero de telefono es ${teléfono}`
+
+console.log(stringCompleto);
+
+
+localStorage.setItem('ciudad', 'Japon');
+
+localStorage.removeItem('CP');
+
+localStorage.removeItem('telefono');
