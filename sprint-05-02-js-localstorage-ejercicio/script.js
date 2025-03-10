@@ -8,4 +8,16 @@ localStorage.setItem('edad', '25');
 localStorage.setItem('profesion', 'Desarrollador Full Stack Junior');
 localStorage.setItem('CP', '46600');
 localStorage.setItem('ciudad', 'Valencia');
-localStorage.setItem('Telefono', '1212323213');
+localStorage.setItem('telefono', '1212323213');
+
+const nombre = localStorage.getItem('nombre');
+
+const edad = localStorage.getItem('edad');
+
+const profesion = localStorage.getItem('profesion');
+
+const CP = localStorage.getItem('CP');
+
+const ciudad = localStorage.getItem('ciudad');
+
+const teléfono = localStorage.getItem('telefono');
